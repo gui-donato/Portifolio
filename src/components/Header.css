@@ -1,0 +1,118 @@
+/* Estilo do Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alterado de space-between para flex-start */
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escuro mais leve */
+  color: #fff;
+  padding: 0.5rem 2rem; /* Reduzindo o padding para diminuir a altura */
+  height: auto; /* Removendo a altura fixa */
+  min-height: 29vh; /* Reduzindo o tamanho mínimo da altura */
+  position: relative;
+  width: 100%; /* Garantindo que a largura do header seja 100% */
+  box-sizing: border-box; /* Garante que padding não cause rolagem */
+  overflow-x: hidden; /* Previne rolagem horizontal */
+}
+
+/* Parte superior - Nome e habilidades */
+.header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Espaço entre a parte superior e os links */
+}
+
+.header-name h1 {
+  font-size: 1.8rem; /* Reduzindo o tamanho da fonte */
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.header-name p {
+  font-size: 1rem; /* Reduzindo o tamanho da fonte */
+  font-weight: 400;
+  color: #e9c46a; /* Cor suave e vibrante */
+  margin-top: 3px; /* Diminui o espaço entre o título e a descrição */
+}
+
+/* Navegação (Sobre, Projetos, Contato) */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Reduzindo o espaço entre os itens */
+  margin-bottom: 10px; /* Espaço entre os links de navegação e os ícones */
+}
+
+.header-nav a {
+  color: #fff;
+  font-size: 1rem; /* Reduzindo o tamanho da fonte */
+  font-weight: normal;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #f4a261; /* Cor de hover suave */
+  transform: scale(1.05); /* Aumento mais sutil */
+}
+
+/* Parte inferior - Ícones */
+.header-bottom {
+  position: absolute;
+  bottom: 10px; /* Ajustando para não ficar muito perto da borda */
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px; /* Espaço entre os ícones */
+}
+
+.header-links img {
+  padding: 5px;
+  width: 25px; /* Tamanho dos ícones reduzido */
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.header-links img:hover {
+  transform: scale(1.1); /* Efeito de zoom nos ícones */
+}
+
+/* Responsividade */
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 2rem; /* Ajuste para telas menores */
+  }
+
+  .header-name h1 {
+    font-size: 1.6rem; /* Reduzindo o tamanho da fonte */
+  }
+
+  .header-name p {
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+  }
+
+  .header-nav a {
+    font-size: 0.9rem; /* Ajuste para telas menores */
+  }
+
+  .header-links img {
+    width: 20px;
+    height: 20px; /* Reduzindo o tamanho dos ícones */
+  }
+
+  /* Ajuste na navegação para telas pequenas */
+  .header-nav {
+    flex-direction: row; /* Alterando para ficar lado a lado */
+    align-items: center;
+    gap: 1rem; /* Espaço ajustado entre os links */
+  }
+
+  /* Ajuste no posicionamento dos ícones */
+  .header-bottom {
+    bottom: 15px; /* Ajuste no posicionamento */
+  }
+}
+
+

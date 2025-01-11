@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  background: linear-gradient(135deg, #6e7f7f, rgba(74, 84, 85, 10)); /* Gradiente mais suave e translúcido */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4 {
+    font-weight: 700;
+  }
+  
+  p {
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  

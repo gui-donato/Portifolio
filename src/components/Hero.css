@@ -1,0 +1,98 @@
+/* Hero Section - Fundo e estrutura */
+/* Hero Section - Fundo e estrutura */
+.hero {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Ajustando a altura para 60% da altura da tela */
+  padding: 40px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Restante do código continua igual */
+
+
+/* Conteúdo centralizado dentro da Hero */
+.hero-content {
+  background: rgba(0, 0, 0, 0.5); /* Fundo escuro mais leve */
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 900px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4); /* Sombra mais suave */
+  transform: translateY(0);
+  animation: fadeIn 2s ease-out; /* Animação mais suave */
+}
+
+/* Animação para entrada suave */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título do conteúdo */
+.hero p {
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Menos peso na fonte */
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #f4a261; /* Cor suave, mas vibrante */
+}
+
+/* Citação estilizada */
+.hero-quote {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal; /* Peso da fonte mais leve */
+  font-style: italic;
+  color: #f4a261; /* Cor suave e discreta */
+  margin: 20px 0;
+  line-height: 1.6; /* Maior espaçamento entre as linhas */
+  transition: all 0.4s ease;
+}
+
+/* Link de navegação */
+.hero-links a {
+  color: #f4a261;
+  margin: 15px;
+  font-size: 1.1rem;
+  font-weight: normal; /* Fonte mais suave */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos links */
+.hero-links a:hover {
+  color: #e9c46a;  /* Cor de hover mais suave */
+  transform: scale(1.05); /* Aumento mais sutil */
+}
+
+/* Adicionando efeito de hover nas frases */
+.hero-quote:hover {
+  color: #2a9d8f;
+  transform: translateY(-5px); /* Efeito de movimento mais suave */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero-quote {
+    font-size: 1.5rem;
+  }
+}
