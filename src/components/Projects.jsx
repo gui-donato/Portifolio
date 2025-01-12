@@ -3,7 +3,7 @@ import "./Projects.css";
 
 // Importa as imagens diretamente
 import EspacoBelezaImage from "../components/espaçobeleza.png";
-import ProjetoEstudosImage from "../components/listadetarefas.png";
+import ProjetoEstudosImage from "../components/pastel.png";
 
 const projects = [
   {
@@ -13,9 +13,9 @@ const projects = [
     image: EspacoBelezaImage, // Usa a imagem importada
   },
   {
-    title: "Projeto de Estudos",
-    description: "Lista de Tarefas Funcional.",
-    link: "https://clever-lollipop-436a3b.netlify.app/",
+    title: "Lux Pastelaria",
+    description: "Freelancer - Landing Page",
+    link: "https://quiet-figolla-705d15.netlify.app/",
     image: ProjetoEstudosImage, // Usa a imagem importada
   },
 ];
