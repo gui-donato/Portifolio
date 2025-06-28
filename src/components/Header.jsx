@@ -20,13 +20,12 @@ const Header = () => (
       <a href="#projects">Projetos</a>
       <a href="#contact">Contato</a>
     </div>
-
     <div className="header-bottom">
   <div className="header-links">
     <a href="https://github.com/gui-donato" target="_blank" rel="noopener noreferrer">
       <img src={githubIcon} alt="GitHub" />
     </a>
-    <a href="https://www.linkedin.com/in/guilherme-donato-b68066269/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.linkedin.com/in/-guilhermedonato/" target="_blank" rel="noopener noreferrer">
       <img src={linkedinIcon} alt="LinkedIn" />
     </a>
     <a href="mailto:guidonato.conato@hotmail.com">
